@@ -15,7 +15,7 @@ In this unit you should learn:
 
 If you are stuck on a Chromebook or other device that does not have a full operating system, you can use GitHub's Codespaces to have VSCode in the Browser.
 
-Ask your instructor and refer to [this repo]()
+Ask your instructor and refer to [this repo](https://github.com/BCA185/Lecture-Notes).
 
 ## Resources
 

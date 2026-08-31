@@ -1,7 +1,8 @@
 {
     "name": "BCA 185 Lecture Notes",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:latest",
     "forwardPorts": [5500],
+    "postCreateCommand": "code --uninstall-extension GitHub.copilot || true; code --uninstall-extension GitHub.copilot-chat || true",
     "portsAttributes": {
         "5500": {
             "label": "Live Server",

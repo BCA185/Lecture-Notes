@@ -1,7 +1,7 @@
 # BCA 185 Lecture Notes
 
-If you do not have a Windows, MacOS, or Linux system then you can use GitHub's [Codespaces](https://github.com/features/codespaces) feature using this repo.
-Each day in class just make another Folder for each Unit/Day. Make sure to **keep your fork up to date**.
+If you do not have a Windows, MacOS, or Linux system then you can use GitHub's [Codespaces](https://github.com/features/codespaces).
+Using Chrome or Chromeb
 
 > ⚠️ This repo is in active development and may change at any time. Please check back often for updates.
 
@@ -60,19 +60,17 @@ Each day has all main topics covered in the lecture, links to reference material
 | 09   | Multimedia & JS             | Add multimedia (images, videos, audio) and introductory JavaScript to create more interactive and engaging web experiences. |
 | 10   | Web Publishing              | Prepare, publish, and maintain a website using GitHub. Turn in your final Personal Project.                                 |
 
-## Learning Resources
-
 ## Contributing
 
 If you see a problem with a lecture or have suggestions for improvement, please feel free to open an issue or submit a pull request.
 
-LU01 Planning Worksheet
+<!-- LU01 Planning Worksheet
 
 LU02 Site Map
 
 LU03 Research paper
 
-LU04 Wireframe
+LU04 Wireframe -->
 
 <!-- LU05 -->
 
