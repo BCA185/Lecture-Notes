@@ -1,0 +1,43 @@
+/* Add your CSS here to style the photography portfolio*/
+
+/* Go here to get fonts: https://fonts.google.com/ */
+/* Select a font, and copy it's @import statement. Paste at the top of this file.*/
+
+/* Flexbox cheat sheet: https://flexbox.malven.co/*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+h1{
+    font-family: "Pacifico";
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 50px;
+    line-height: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    max-width: 300px;
+}
+
+#img-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: 2500px;
+    gap: 15px;
+}

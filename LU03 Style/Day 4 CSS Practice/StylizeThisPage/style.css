@@ -1,0 +1,89 @@
+/* CSS Variables: https://www.w3schools.com/css/css3_variables.asp */
+:root {
+    --nasa-blue: #0b3d91;
+    --nasa-red: #fc3d21;
+    --space-black: #0b0b0b;
+    --moon-gray: #e0e0e0;
+}
+
+body {
+    background-color: var(--space-black);
+    color: white;
+    font-family:
+        'Courier New', Courier, monospace; /* Monospace for a technical feel */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--nasa-blue);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid var(--nasa-red);
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+nav {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--moon-gray);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--nasa-red);
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+article {
+    background: #111;
+    border: 1px solid #333;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h2 {
+    color: var(--nasa-red);
+    margin-top: 0;
+    border-bottom: 2px solid var(--nasa-blue);
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 20px;
+    color: #555;
+    font-size: 0.75rem;
+    clear: both;
+}

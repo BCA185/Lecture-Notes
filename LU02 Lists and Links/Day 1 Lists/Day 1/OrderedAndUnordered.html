@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML Lists</title>
+    </head>
+    <body>
+        <h1>Different types of lists</h1>
+        <h2>HTML Unordered Lists</h2>
+        <!-- These tags also us to use spacial chars in your html -->
+        <p>The HTML &lt;ul&gt; tag defines an unordered (bulleted) list.</p>
+        <p>
+            An unordered list starts with the &lt;ul&gt; tag. Each list item
+            starts with the &lt;li&gt; tag.
+        </p>
+        <h3 title="You can change this with CSS">
+            The list items will be marked with bullets (small black circles) by
+            default:
+        </h3>
+        <!-- https://www.w3schools.com/html/html_lists_unordered.asp -->
+        <ul>
+            <li>Each item in the list will be a new line on the webpage.</li>
+            <li>Make sure you close each Line Item</li>
+            <li>
+                You can make a nested HTML lists
+                <ul>
+                    <li>Each item will be a sub list</li>
+                    <li>
+                        Make sure this list is still a line item of the parent
+                        list
+                    </li>
+                </ul>
+            </li>
+            <li>Back out of the list</li>
+        </ul>
+        <h2>HTML Ordered Lists</h2>
+
+        <p>
+            The HTML &lt;ol&gt; tag defines an ordered list. An ordered list can
+            be numerical or alphabetical.
+        </p>
+        <p>
+            An ordered list starts with the &lt;ol&gt; tag. Each list item
+            starts with the &lt;li&gt; tag.
+        </p>
+        <!-- https://www.w3schools.com/html/html_lists_ordered.asp -->
+        <ol type="a">
+            <li>And Ordered list follows the same rules as a Unordered</li>
+            <li>Ordered lists are uses less then unordered lists.</li>
+            <li>
+                You can change the item marker with type attribute
+                <!-- You can mix types with nested lists -->
+                <ul>
+                    <li>
+                        type="1" The list items will be numbered with numbers
+                        (default)
+                    </li>
+                    <li>
+                        type="A" The list items will be numbered with uppercase
+                        letters
+                    </li>
+                    <li>
+                        type="a" The list items will be numbered with lowercase
+                        letters
+                    </li>
+                    <li>
+                        type="i" The list items will be numbered with lowercase
+                        roman numbers
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </body>
+</html>

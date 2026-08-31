@@ -1,0 +1,46 @@
+header {
+    text-align: center;
+}
+
+.special {
+    background-color: brown;
+    font-size: 32px;
+}
+
+nav {
+    background-color: #968a8b;
+    display: inline;
+}
+
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    max-width: 800px;
+}
+
+article {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin: 5px;
+    width: 400px;
+    height: 400px;
+}
+
+p,
+#special,
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.image-article {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+
+/* Large Picture of the Day */
+img {
+    max-width: 600px;
+}

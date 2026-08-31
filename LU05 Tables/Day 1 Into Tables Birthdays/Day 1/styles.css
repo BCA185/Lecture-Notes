@@ -1,0 +1,19 @@
+table{
+    width: 75%;
+    margin: auto;
+    border-spacing: 0px;
+    border-style: solid;
+    background-color: #18e7ce;
+}
+td,th{
+    border-style: solid;
+    padding: 10px;
+}
+th{
+    background-color: #eaeaea;
+}
+td.e{background-color: #E71831;}
+caption{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}

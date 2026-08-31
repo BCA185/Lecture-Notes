@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #4caf50;
+    text-align: center;
+}
+#form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#form-container {
+    background-color: #efe7e7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input,
+select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type='submit'] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.label {
+    display: inline-block;
+    width: 20%;
+    text-align: end;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+legend {
+    background-color: #efe7e7;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

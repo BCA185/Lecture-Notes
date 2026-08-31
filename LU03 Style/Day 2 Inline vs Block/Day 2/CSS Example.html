@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <!-- Examples of CSS selectors, class and id attributes and block and inline elements. Ray Ryon 9/16/2020 -->
+        <link rel="stylesheet" href="CSS Example.css" />
+        <title>CSS Examples</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <header>
+            <h1>HTML for Structure and CSS for Style</h1>
+        </header>
+        <nav>
+            <h2>Links for W3Schools Tutorials</h2>
+            <ul>
+                <li>
+                    <a
+                        href="https://www.w3schools.com/html/html_css.asp"
+                        target="_blank"
+                        >Beginning CSS.</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.w3schools.com/html/html_blocks.asp"
+                        target="_blank"
+                        >Block and Inline Structure</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+                        target="_blank"
+                        >Semantic Elements</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>Adding Structure by using HTML elements</h2>
+                <p>
+                    We use the div html tag to create a container. A container
+                    is used to contain other elements, it is a way to help
+                    organize your elements. The div element is a block element.
+                    Block elements start on a new line and take up the full
+                    width available (stretches out to the left and right as far
+                    as it can).
+                </p>
+                <p>
+                    Another container is created using the span tag. It is
+                    similar to the div except it is an inline element. Inline
+                    elements do not begin on new lines, but start from the next
+                    available position after the previous content on the same
+                    line. Inline content will also end at the end of the
+                    content.
+                </p>
+                <p>
+                    New HTML5 Semantic elements have been created to add
+                    structure. These elements work similar to the div element
+                    but have specialized use. For example the nav element is
+                    used as a container for adding a navigation block. A header
+                    element is use to create a page heading. Also a footer
+                    element is used to add a block at the bottom of a web page.
+                </p>
+            </article>
+            <hr />
+            <article>
+                <h2>Using CSS to add Style</h2>
+                <p>
+                    CSS allows a web developer a method to format the web page.
+                    Some of the styles that can be set with CSS is color, text
+                    font, size of elements and position of elements.
+                </p>
+                <h3>Three methods to add CSS to an HTML document.</h3>
+                <ul>
+                    <li>Inline</li>
+                    <li>Internal</li>
+                    <li>External</li>
+                </ul>
+                <p>
+                    <span class="special">Internal styles</span>
+                    are placed in the head section of the web page and is
+                    identified by the style tag and end style tag. Style rules
+                    are created using a selector followed by properties that are
+                    enclosed in curly braces. The selector identifies the HTML
+                    element that uses the properties identified after it. For
+                    example notice the header selector has background color.
+                </p>
+                <p class="special">
+                    You will notice that selectors can be of various types. Some
+                    selectors are the name of the HTML element. Other selectors
+                    might use an ID name, these will have a Hash tag in front of
+                    their name. Another type of selector uses a class name, and
+                    will have a dot in front of it in the internal style area.
+                    This paragraph has a class name that is used to add it's
+                    style.
+                </p>
+            </article>
+        </main>
+        <footer>
+            <p style="border: 1px solid black; color: #00f">
+                This paragraph Uses
+                <span class="special"> Inline styles.</span>
+                The style attribute is added to the p tag to give the paragraph
+                a black border and blue text.
+            </p>
+        </footer>
+    </body>
+</html>

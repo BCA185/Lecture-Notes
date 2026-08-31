@@ -1,0 +1,83 @@
+.row {
+    display: flex;
+    justify-content: center;
+}
+/* TODO I don't think i need input class */
+.input {
+    padding-right: 10px;
+}
+.col-style {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#tip-box {
+    display: flex;
+    justify-content: center;
+}
+
+#form-container {
+    width: 50%;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+#cookie-order label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#cookie-order input[type="text"],
+#cookie-order select,
+#cookie-order textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#cookie-order input[type="submit"] {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cookie-order input[type="submit"]:hover {
+    background-color: #000000c1;
+}
+
+#cookie-order .input {
+    display: flex;
+    align-items: center;
+}
+
+#cookie-order .row {
+    margin-bottom: 20px;
+}
+
+#cookie-order #tip-box {
+    display: flex;
+    align-items: center;
+}
+
+#cookie-order #tip-box label {
+    margin-right: 10px;
+}
+
+#cookie-order #tip {
+    flex-grow: 1;
+}
+/* Add some CSS */
+textarea {
+    resize: none;
+}

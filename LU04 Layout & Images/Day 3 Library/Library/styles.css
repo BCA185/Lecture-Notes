@@ -1,0 +1,63 @@
+body {
+    font-family:
+    'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* https://www.w3schools.com/cssref/pr_background-repeat.php */
+    background-image: url('images/paper.jpg');
+    background-repeat: repeat;
+}
+
+header {
+    text-align: center;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    background-image: url('images/background.png');
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    font-size: 0.6em;
+}
+
+footer h2 {
+    font-size: 12px;
+}
+
+footer p {
+    font-size: 0.7em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+article p {
+    font-weight: bold;
+    background-color: #ffff;
+    padding: 10px;
+    border-style: dotted;
+    border-width: 4px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--   
+	Ray Ryon 4/28/2020
+	Example with CSS and JavaScript added  
+	Using tutorial from w3schools
+	https://www.w3schools.com/howto/howto_js_lightbox.asp
+
+  Updated by Luke Matheis 2/1/2023
+ -->
+
+<head>
+  <title>Photo Gallery Example 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1> Photo Gallery Example 3 (W3schools tutorial)</h1>
+  <p>This example is newer version of a Photo Gallery that uses a Lightbox style. It uses CSS and JavaScript to make a
+    modal window that appears on top of the gallery. This technique is put together using w3schools tutorial. All code
+    is in one file.</p>
+  <h3>Photo Gallery</h3>
+  <div class="row">
+    <div class="column">
+      <img src="photos/butterfly-fish-thumb.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+        class="hover-shadow cursor">
+    </div><!--end single-->
+    <div class="column">
+      <img src="photos/scr-fish-thumb.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+        class="hover-shadow cursor">
+    </div><!--end single-->
+  </div><!--end imageRow-->
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 2</div>
+        <img src="photos/butterfly-fish.jpg" style="height:400px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 2</div>
+        <img src="photos/scr-fish.jpg" style="height:400px;">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="photos/butterfly-fish-thumb.jpg" onclick="currentSlide(1)" alt="Butterfly Fish">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="photos/scr-fish-thumb.jpg" onclick="currentSlide(2)" alt="Clown Fish">
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DestiCompare - Your Travel Destination Comparison</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/tableStyle.css" />
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    </head>
+
+    <body>
+        <header>
+            <h1>DestiCompare</h1>
+            <p>Your Travel Destination Comparison</p>
+        </header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./destinations.html">Destinations</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="container">
+            <div class="hero">
+                <h2>Trips</h2>
+            </div>
+            <div class="trip-data">
+                <table>
+                    <caption>
+                        Popular Destinations
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Cost</th>
+                            <th colspan="3">Weather</th>
+                            <th>Safety</th>
+                            <th>Transportation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="country">Norway</td>
+                            <td>Non EU: $5,000</td>
+                            <td rowspan="2">
+                                Summer: Peak Season, Midnight sun
+                            </td>
+                            <td rowspan="2">
+                                Fall/Spring: Most affordable, Mild weather,
+                                shorter days
+                            </td>
+                            <td rowspan="2">
+                                Winter: Northern Lights, 5-6 daylight hours
+                            </td>
+                            <td rowspan="2">No Special Advisory</td>
+                            <td rowspan="2" class="checkmark">✅</td>
+                        </tr>
+                        <tr>
+                            <td>EU: $2,000</td>
+                        </tr>
+                        <tr>
+                            <td class="country">Philippines</td>
+                            <td>$1,200</td>
+                            <td colspan="3">
+                                Same hot and humid weather all year. Watch out
+                                for a dry and wet season
+                            </td>
+                            <td>
+                                Marawi City in Mindanao – Level 4: Do Not Travel
+                            </td>
+                            <td>⛔ Transit may be limited in some areas.</td>
+                        </tr>
+                        <tr>
+                            <td class="country">Australia</td>
+                            <td>$3,000</td>
+                            <td>Summer: Very Hot</td>
+                            <td>Fall/Spring: Hot cools off in evening</td>
+                            <td>Winter: Mild weather</td>
+                            <td>No Special Advisory</td>
+                            <td class="checkmark">✅</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p>&copy; 2023 DestiCompare. IHCC</p>
+                <p>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

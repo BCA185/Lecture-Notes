@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <!--   
+	Ray Ryon 4/28/2020
+	Example with CSS Framework W3.CSS added  
+	Using tutorial from w3schools
+	https://www.w3schools.com/w3css/w3css_slideshow.asp
+ -->
+
+    <head>
+        <title>Photo Gallery Example 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+    </head>
+
+    <body>
+        <h1>Photo Gallery Example 4 (W3.CSS)</h1>
+        <p>
+            This example uses some JavaScript to activate a modal page. It uses
+            a CSS Framework named W3.CSS. This technique is put together using
+            w3schools tutorial. All code is in one file with a link to the
+            W3.css styles.
+        </p>
+        <h3>Photo Gallery</h3>
+        <div class="w3-container">
+            <h2>W3.CSS Modal Image Gallery</h2>
+            <p>Click on the images to display them in full size.</p>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-container w3-third">
+                <img
+                    src="photos/butterfly-fish.jpg"
+                    style="height: 180px; cursor: pointer"
+                    onclick="onClick(this)"
+                    class="w3-hover-opacity"
+                />
+            </div>
+            <div class="w3-container w3-third">
+                <img
+                    src="photos/scr-fish.jpg"
+                    style="height: 180px; cursor: pointer"
+                    onclick="onClick(this)"
+                    class="w3-hover-opacity"
+                />
+            </div>
+        </div>
+        <div
+            id="modal01"
+            class="w3-modal"
+            onclick="this.style.display = 'none'"
+        >
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright"
+                >&times;</span
+            >
+            <script>
+                function onClick(element) {
+                    document.getElementById("img01").src = element.src;
+                    document.getElementById("modal01").style.display = "block";
+                }
+            </script>
+            <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width: 100%" />
+            </div>
+        </div>
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+Web hosting
+_______________
+Look at PDF
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website
+https://www.w3schools.com/howto/howto_website_host_staticwebsite.asp
+https://theoldnet.com/
+
+Web Domains
+____________________________________
+https://domains.google/
+
+
+what is git
+_____________________________
+https://www.youtube.com/watch?v=2ReR1YJrNOM
+https://git-scm.com/
+
+what is github
+___________________________________
+https://www.youtube.com/watch?v=pBy1zgt0XPc
+https://www.w3schools.com/whatis/whatis_github.asp
+
+https://github.com/about
+
+Why are we using Github pages
+
+what is github pages
+______________________________________
+https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Using_Github_pages
+

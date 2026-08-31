@@ -1,0 +1,13 @@
+git init
+git add --all
+git commit -m "message"
+git remote add origin https://github.com/sorrymint/sorrymint.github.io.git
+git branch -m main
+git push -u origin main
+
+
+how to reupload
+_____________________________
+git add --all
+git commit -m "change file name"
+git push

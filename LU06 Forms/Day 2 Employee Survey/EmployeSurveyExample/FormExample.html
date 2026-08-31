@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Form Example</title>
+    </head>
+
+    <body>
+        <h1>Employee Survey</h1>
+        <div id="form-container">
+            <form
+                method="post"
+                action="https://www.w3schools.com/action_page.php"
+            >
+                <fieldset class="ei">
+                    <legend>Employee Information</legend>
+                    <label class="label" for="name">Full Name: </label>
+                    <input type="text" name="fullname" id="name" />
+                    <br />
+                    <label class="label" for="id">ID</label>
+                    <input type="password" name="id" id="id" />
+                    <br />
+                    <label for="email" class="label">Email: </label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="email@something.com"
+                    />
+                    <br />
+                    <label class="label" for="Location">Location: </label>
+                    <select name="Location" id="Location">
+                        <option value="None" selected disabled hidden>
+                            Please select
+                        </option>
+                        <option value="Albia">Albia</option>
+                        <option value="Bloomfeild">Bloomfeild</option>
+                        <option value="Cardinal">Cardinal</option>
+                        <option value="Centervile">Centervaile</option>
+                        <option value="Moravia">Moravia</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Department</legend>
+                    <input
+                        type="radio"
+                        name="environment"
+                        id="frontEnd"
+                        value="1"
+                        checked
+                    />
+                    <label for="frontEnd">Front End</label>
+                    <br />
+                    <input
+                        type="radio"
+                        name="environment"
+                        id="backEnd"
+                        value="2"
+                    />
+                    <label for="backEnd">Back End</label>
+                    <br />
+                    <input
+                        type="radio"
+                        name="environment"
+                        id="fullStack"
+                        value="3"
+                    />
+                    <label for="fullStack">Full Stack</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Languages</legend>
+                    <input
+                        type="checkbox"
+                        name="html"
+                        id="html"
+                        value="YES"
+                        checked
+                    />
+                    <label for="html">HTML</label>
+                    <br />
+                    <input type="checkbox" name="css" id="css" value="YES" />
+                    <label for="css">CSS</label>
+                    <br />
+                    <input
+                        type="checkbox"
+                        name="python"
+                        id="python"
+                        value="YES"
+                    />
+                    <label for="python">Python</label>
+                    <br />
+                    <input type="checkbox" name="java" id="java" value="YES" />
+                    <label for="java">Java</label>
+                </fieldset>
+                <input type="submit" value="Next" />
+            </form>
+        </div>
+    </body>
+</html>

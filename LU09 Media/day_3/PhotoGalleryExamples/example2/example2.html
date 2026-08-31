@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <!-- 
+	Ray Ryon 4/28/2020    
+	Photo Gallery - Lightbox version 2 Example with CSS,  JavaScript and JQuery added.
+		Example used concepts created by Lokesh Dhakar from
+		http://www.worldatnight.ethz.ch/lightbox/index.html#example 
+	https://lokeshdhakar.com/projects/lightbox2/#getting-started
+ -->
+
+    <head>
+        <title>Photo Gallery Example 2</title>
+        <style>
+            body {
+                background-color: #999;
+            }
+            .imageRow .single {
+                float: left;
+            }
+            .imageRow .single a {
+                float: left;
+                display: block;
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 7px;
+                line-height: 0;
+                margin-right: 40px;
+                margin-bottom: 40px;
+            }
+            .imageRow .single a:hover {
+                background-color: #8ad459;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/lightbox.css"
+            media="screen"
+        />
+    </head>
+    <body>
+        <h1>
+            Photo Gallery Example 2 (Light Box version 2 (2012) CSS, JavaScript
+            and JQuery)
+        </h1>
+        <p>
+            This example is an early version of a Photo Gallery that uses a
+            Lightbox style. New effects that are added include a hover effect
+            that has a light colored box around the thumbnail. After clicking on
+            the thumbnail, the larger image appears using Javascript to add
+            special effects of fading in. Controls are added to the larger image
+            to open previous or next image. Also a close control is added that
+            takes you back to the photo gallery.
+        </p>
+        <div class="section" id="section">
+            <h3>Photo Gallery</h3>
+            <div class="imageRow">
+                <div class="single">
+                    <a href="photos/butterfly-fish.jpg" rel="lightbox[a]"
+                        ><img src="photos/butterfly-fish-thumb.jpg" alt=""
+                    /></a>
+                </div>
+                <!--end single-->
+                <div class="single">
+                    <a
+                        href="photos/scr-fish.jpg"
+                        rel="lightbox[a]"
+                        title="SCR Fish"
+                    >
+                        <img src="photos/scr-fish-thumb.jpg" alt="scr-fish"
+                    /></a>
+                </div>
+                <!--end single-->
+            </div>
+            <!--end imageRow-->
+        </div>
+        <!--end section-->
+        <script src="js/jquery-1.7.2.min.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $('a').smoothScroll({
+                    speed: 2000,
+                    easing: 'easeInOutCubic',
+                });
+                $('.showOlderChanges').on('click', function (e) {
+                    $('.changelog .old').slideDown('slow');
+                    $(this).fadeOut();
+                    e.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>

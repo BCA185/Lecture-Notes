@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Accessibility Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Web Accessibility Guide</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="https://www.w3.org/TR/WCAG22/">Guidelines</a></li>
+        <li><a href="#html-accessibility">HTML Accessibility</a></li>
+    </ul>
+</nav>
+
+<main>
+    <article id="home">
+        <h2>Introduction to Web Accessibility </h2>
+        <p>This guide provides information on web accessibility best practices using semantic HTML and CSS.</p>
+    </article>
+    <div class="image-container">
+        <!-- https://www.w3schools.com/tags/tag_figure.asp -->
+        <!--Image is not important to the article-->
+        <figure>
+            <!--https://www.w3.org/WAI/fundamentals/accessibility-intro/-->
+            <!--If the image is only for decorations, don't put any alt text, still include an alt attribute.-->
+            <img src="https://www.w3.org/WAI/content-images/intro-accessibility/video-still-accessibility-intro-16-9.jpg"
+                 alt="">
+            <figcaption><a class="button" href="https://www.w3.org/WAI/videos/standards-and-benefits/">Video
+                Introduction to Web Accessibility and W3C Standards </a></figcaption>
+        </figure>
+    </div>
+
+    <article id="web-accessibility">
+        <h2>Web Accessibility</h2>
+        <p>Web accessibility refers to the practice of making websites usable by people of all abilities and
+            disabilities. This includes:</p>
+        <ul>
+            <li>Providing text alternatives for images</li>
+            <li>Using semantic HTML elements</li>
+            <li>Ensuring keyboard navigation</li>
+            <li>Maintaining color contrast</li>
+            <li>Creating resizable text</li>
+        </ul>
+        <!-- Build three images here with mobile having them in a row desktop in a line.-->
+    </article>
+
+    <article id="html-accessibility">
+        <h2>HTML Accessibility</h2>
+        <p>Here are some key HTML practices for accessibility:</p>
+        <ul>
+            <li>Use semantic HTML elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+                <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code>.
+            </li>
+            <li>Use proper heading structure <code>&lt;h1&gt; to &lt;h6&gt;</code></li>
+            <li>Provide text alternatives for images using the <code>alt</code> attribute</li>
+            <li>Create accessible forms using <code>label</code> elements</li>
+        </ul>
+        <div class="image-grid">
+            <figure class="image-item">
+                <img src="images/Keyboard-navigation.jpg" alt="Keyboard Navigation">
+                <figcaption>Keyboard Navigation</figcaption>
+            </figure>
+            <figure class="image-item">
+                <img src="images/Resizable%20Text.png" alt="Resizable Text">
+                <figcaption>Resizable Text</figcaption>
+            </figure>
+            <figure class="image-item">
+                <img src="images/Color%20Contrast.png" alt="Color Contrast">
+                <figcaption>Color Contrast</figcaption>
+            </figure>
+        </div>
+    </article>
+
+    <article id="css-accessibility">
+        <h2>CSS Accessibility</h2>
+        <p>CSS plays a crucial role in web accessibility:</p>
+        <ul>
+            <li>Use sufficient color contrast</li>
+            <li>Ensure focus styles are visible for interactive elements</li>
+            <li>Provide appropriate spacing between elements</li>
+            <li>Use appropriate font sizes and line heights</li>
+        </ul>
+    </article>
+</main>
+
+<footer>
+    <p>IHCC Accessible Website</p>
+</footer>
+</body>
+</html>

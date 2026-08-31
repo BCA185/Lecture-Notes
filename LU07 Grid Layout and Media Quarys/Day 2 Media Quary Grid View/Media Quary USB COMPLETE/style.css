@@ -1,0 +1,155 @@
+/* TODO change project to use CSS color variables */
+
+body {
+    font-family: "Courier New", monospace;
+    background-color: #000;
+    color: #00ff00;
+    text-align: left; /* Align text to the left to simulate a terminal */
+    padding: 0px;
+}
+
+header {
+    padding: 10px;
+    border-bottom: 1px solid #00ff00;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #c5bfbf;
+}
+
+.usb-logo img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu a {
+    color: #00ff00;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.grid-item {
+    padding: 20px;
+    border: 2px solid #00ff00;
+    text-align: left;
+    box-shadow: 0 0 5px #00ff00;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid-item h3 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.grid-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.grid-item h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.grid-item ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.grid-item ul li {
+    margin-top: 5px;
+}
+
+.terminal-text {
+    background-color: #000;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.terminal-link {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.terminal-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #000;
+    color: #00ff00;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #00ff00;
+}
+
+/* Media Query for Phones */
+/* We don't need this bc by default its not in grid view */
+@media screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        /* Two column layout for laptops and larger screens */
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .usb-logo {
+        display: none;
+    }
+}
+
+/* Media Query for Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        /* Two column layout for laptops and larger screens */
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+
+/* Media Query for Laptops and Larger Screens */
+@media screen and (min-width: 1025px) {
+    .grid-container {
+        display: grid;
+        /* Three columns layout for laptops and larger screens */
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+    }
+}

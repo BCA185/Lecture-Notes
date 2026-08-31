@@ -1,0 +1,54 @@
+/* Add your CSS here to style the photography portfolio*/
+
+/* Go here to get fonts: https://fonts.google.com/*/
+/* Select a font, and copy it's @import statement. Paste at the top of this file.*/
+
+/* Flexbox cheat sheet: https://flexbox.malven.co/*/
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Fasthand&family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Pacifico";
+}
+
+h2 {
+    font-family: Domine;
+    font-size: small;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 50px;
+    line-height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+img {
+    max-width: 200px;
+}
+
+#img-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1500px;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+}
