@@ -11,6 +11,12 @@
     "customizations": {
         "vscode": {
             "settings": {
+                "workbench.startupEditor": "none",
+                "chat.commandCenter.enabled": false,
+                "github.copilot.enable": {
+                    "*": false
+                },
+                "editor.inlineSuggest.enabled": false,
                 "files.autoSave": "onFocusChange",
                 "editor.formatOnSave": true,
                 "editor.defaultFormatter": "esbenp.prettier-vscode",
