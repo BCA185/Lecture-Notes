@@ -1,0 +1,38 @@
+{
+    "name": "BCA 185 Lecture Notes",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+    "forwardPorts": [5500],
+    "portsAttributes": {
+        "5500": {
+            "label": "Live Server",
+            "onAutoForward": "openBrowser"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "files.autoSave": "onFocusChange",
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "[html]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+                "[css]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+                "[javascript]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+                "[json]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                }
+            },
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "ritwickdey.LiveServer",
+                "mathematic.vscode-pdf",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    }
+}

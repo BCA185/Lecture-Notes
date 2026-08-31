@@ -11,6 +11,12 @@ In this unit you should learn:
 - What client-server is
 - How to make a comment in an HTML document
 
+## Don't Have a Windows, MacOS, or Linux system?
+
+If you are stuck on a Chromebook or other device that does not have a full operating system, you can use GitHub's Codespaces to have VSCode in the Browser.
+
+Ask your instructor and refer to [this repo]()
+
 ## Resources
 
 - Use HTML Validator https://validator.w3.org/
