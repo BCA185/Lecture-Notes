@@ -1,0 +1,30 @@
+.controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.controls label {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    min-height: 300px;
+    max-width: 700px;
+    padding: 10px;
+    border: 2px dashed #999;
+}
+
+.box {
+    background: steelblue;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}

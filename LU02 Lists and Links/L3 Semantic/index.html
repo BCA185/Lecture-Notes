@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Semantic Elements</title>
+        <style>
+            header,
+            nav,
+            section,
+            article,
+            aside,
+            footer {
+                border: 2px solid #333;
+            }
+
+            header {
+                background: #d9f2d9;
+            }
+
+            nav {
+                background: #dfefff;
+            }
+
+            ul {
+                display: flex;
+                gap: 20px;
+            }
+
+            main {
+                display: flex;
+            }
+
+            section {
+                background: #eaf4ff;
+            }
+
+            article {
+                background: #fff0d6;
+            }
+
+            aside {
+                flex: 1;
+                background: #fce7f3;
+            }
+
+            footer {
+                background: #f1f1f1;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Semantic Elements</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#section">Section</a></li>
+                <li><a href="#article">Article</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content">
+                <section>
+                    <h2 id="main">Main Content</h2>
+                    <p>
+                        The <strong>main</strong> tag represents the most
+                        important content on the page.
+                    </p>
+                </section>
+
+                <article id="article">
+                    <h2>Article</h2>
+                    <p>
+                        The <strong>article</strong> tag is used for a
+                        self-contained piece of content that could stand on its
+                        own.
+                    </p>
+                </article>
+
+                <section id="section">
+                    <h2>Section</h2>
+                    <p>
+                        The <strong>section</strong> tag groups related content
+                        under a common theme or topic.
+                    </p>
+                </section>
+            </div>
+
+            <aside>
+                <h2 id="aside">Aside</h2>
+                <p>
+                    The <strong>aside</strong> tag is used for content that is
+                    related to the main idea but is not required to understand
+                    it.
+                </p>
+            </aside>
+        </main>
+
+        <footer id="footer">
+            <h2>Footer</h2>
+            <p>
+                The <strong>footer</strong> tag usually contains copyright,
+                author, or related links.
+            </p>
+        </footer>
+    </body>
+</html>

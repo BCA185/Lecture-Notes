@@ -6,9 +6,7 @@ If you can't keep up with the pace, try to keep the same HTML structure and summ
 
 ## W3C
 
-W3C
-
-https://www.w3.org/
+[W3C](https://www.w3.org/) World wide web consortium develop standards and guidelines to help the web be standardized.
 
 Living HTML Standard
 
@@ -18,10 +16,12 @@ https://html.spec.whatwg.org/multipage/introduction.html#is-this-html5?
 
 https://blog.hubspot.com/marketing/parts-url
 
+![Parts of URL](./parts%20of%20URL.webp)
+
 ## Validate
 
 https://validator.w3.org/
 
-## Pair Programming
+## Personal Project
 
-Have students start on LU01 Pair Programming Assignment.
+Have students start on LU01 Personal Project Assignment with time left in class.

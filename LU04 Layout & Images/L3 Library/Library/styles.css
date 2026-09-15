@@ -1,0 +1,83 @@
+:root {
+    --color-caption-bg: #ffffff;
+    --color-border: #000000;
+}
+
+body {
+    font-family:
+        'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* https://www.w3schools.com/cssref/pr_background-repeat.php */
+    background-image: url('images/paper.webp');
+    background-repeat: repeat;
+}
+
+header {
+    text-align: center;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    background-image: url('images/background.webp');
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    font-size: 0.6em;
+}
+
+footer h2 {
+    font-size: 12px;
+}
+
+footer p {
+    font-size: 0.7em;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 200px;
+    max-width: 250px;
+    padding: 10px;
+    margin: 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-weight: bold;
+    background-color: var(--color-caption-bg);
+    padding: 10px;
+    border-style: dotted;
+    border-width: 4px;
+    border-color: var(--color-border);
+}

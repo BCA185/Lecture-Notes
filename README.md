@@ -63,35 +63,3 @@ Each day has all main topics covered in the lecture, links to reference material
 ## Contributing
 
 If you see a problem with a lecture or have suggestions for improvement, please feel free to open an issue or submit a pull request.
-
-<!-- LU01 Planning Worksheet
-
-LU02 Site Map
-
-LU03 Research paper
-
-LU04 Wireframe -->
-
-<!-- LU05 -->
-
-<!-- ## Personal Project Part 1: File Structure -->
-
-<!-- LU06 -->
-
-<!-- ## Personal Project Part 2: Raw Content -->
-
-<!-- LU07 -->
-
-<!-- ## Personal Project Part 3: Media -->
-
-<!-- LU08 -->
-
-<!-- ## Personal Project Part 4: Layout -->
-
-<!-- LU09 -->
-
-<!-- ## Personal Project Part 5: Design -->
-
-<!-- LU10 -->
-
-<!-- ## Personal Project Part 6: Web Publishing -->

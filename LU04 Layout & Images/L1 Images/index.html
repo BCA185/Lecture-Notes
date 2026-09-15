@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Images in HTML</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav></nav>
+        <header></header>
+        <main>
+            <article>
+                <h1>Images in HTML</h1>
+                <p>
+                    The <code>&lt;img&gt;</code> tag puts an image on a web
+                    page. It does not need a closing tag.
+                </p>
+                <ul>
+                    <li>
+                        The <code>src</code> tells the browser where the image
+                        is.
+                    </li>
+                    <li>
+                        The <code>alt</code> describes the image for people who
+                        cannot see it
+                    </li>
+                </ul>
+                <img src="images/bliss.png" alt="Windows XP wallpaper." />
+                <p>Start with this:</p>
+                <code
+                    >&lt;img src="image.jpg" alt="A description of the
+                    image"&gt;</code
+                >
+            </article>
+            <section>
+                <h2>Making Placeholder Images</h2>
+                <p>
+                    <a href="https://placehold.co/" target="_blank"
+                        >Placehold.co</a
+                    >
+                    makes placeholder images for us. Put the width and height in
+                    the URL. This URL makes an image that is 300 pixels wide and
+                    150 pixels tall.
+                </p>
+                <img
+                    src="https://placehold.co/300x150/fefae0/283618?text=300+x+150"
+                    alt="A placeholder image labeled 300 by 150"
+                />
+                <p><code>https://placehold.co/300x150</code></p>
+            </section>
+            <section>
+                <h2>File Formats</h2>
+                <figure>
+                    <h3>JPG</h3>
+                    <img
+                        src="https://placehold.co/300x150/f4a261/ffffff/jpeg?text=JPEG"
+                        alt="An orange JPEG placeholder image"
+                    />
+                    <figcaption>
+                        JPEG is one of the most common formats for photos on the
+                        web. It is a compressed format, and is very old so it's
+                        compression is not as good as newer formats. It does not
+                        support transparency.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <h3>PNG</h3>
+                    <img
+                        src="https://placehold.co/300x150/90be6d/ffffff/png?text=PNG"
+                        alt="A green PNG placeholder image"
+                    />
+                    <figcaption>
+                        Use PNG when an image needs a transparent background.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <h3>WebP</h3>
+                    <img
+                        src="https://placehold.co/300x150/577590/ffffff/webp?text=WebP"
+                        alt="A blue WebP placeholder image"
+                    />
+                    <figcaption>
+                        WebP is a newer format that usually makes small web
+                        files with better quality than JPEG. It supports
+                        transparency.
+                    </figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Wrangling (Resizing) Images</h2>
+                <h3>Resize the Original Image First</h3>
+                <p>
+                    Before you go and write CSS, first resize the original image
+                    using a photo editor. The image should never be bigger then
+                    the space it will be displayed in. A smaller image file
+                    loads faster.
+                </p>
+
+                <h3>Set a Fixed Width with CSS</h3>
+                <p>
+                    You can change the width and height with pixels or
+                    percentages. Make sure to keep the aspect ratio.
+                </p>
+                <img
+                    style="width: 500px; height: 150px"
+                    src="images/bliss-HD.jpg"
+                    alt="Bliss but stretched"
+                />
+
+                <h3>Keep the Image Shape</h3>
+                <p>
+                    With <code>height: auto;</code> the browser calculates the
+                    correct height.
+                </p>
+                <img
+                    style="width: 200px; height: auto"
+                    src="images/bliss-HD.jpg"
+                    alt="Bliss but keeping aspect ratio"
+                />
+                <h3>Resizing based on container size</h3>
+                <!-- Change div width and height to see the image resize -->
+                <div
+                    style="width: 500px; height: 300px; border: 3px solid black"
+                >
+                    <p>Text should be visible</p>
+                    <img
+                        style="
+                            max-width: 70%;
+                            max-height: 70%;
+                            width: auto;
+                            height: auto;
+                        "
+                        src="images/bliss-HD.jpg"
+                        alt="Bliss wallpaper resized to fit inside a bordered container"
+                    />
+                </div>
+            </section>
+        </main>
+        <footer>Made by Luke Matheis | IHCC</footer>
+    </body>
+</html>
