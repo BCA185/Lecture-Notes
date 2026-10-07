@@ -1,0 +1,42 @@
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.trip-data {
+    max-width: 100%;
+    /* Make the table scrollable on small screens */
+    overflow-x: auto;
+}
+
+caption {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    /* We can use colors from the main style sheet */
+    background-color: var(--color-secondary);
+}
+
+/* Calculate first column of every row in the table and make it bold */
+td:first-child {
+    font-weight: bold;
+}
+
+td.checkmark {
+    font-size: 30px;
+    padding: 0px;
+}
+
+td.crossmark {
+    font-size: 40px;
+}

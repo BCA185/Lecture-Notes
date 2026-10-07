@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Form Fields</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2em;
+            }
+            main {
+                padding: 20px;
+            }
+            header {
+                background-color: lightblue;
+                padding: 20px;
+                text-align: center;
+            }
+            form {
+                border: 1px solid black;
+                padding: 20px;
+            }
+            .button {
+                background-color: blue;
+                color: white;
+                font-size: 1.2em;
+                margin: 10px;
+                padding: 10px 50px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>HTML Form Fields</h1>
+        </header>
+        <main>
+            <h2>Showing off different form fields</h2>
+            <!-- Our form data doesn't go anywhere yet -->
+            <form>
+                <p>Text</p>
+                <input
+                    type="text"
+                    name="text"
+                    id=""
+                    placeholder="Enter your name"
+                />
+                <p>Password</p>
+                <input
+                    type="password"
+                    name="password"
+                    id=""
+                    placeholder="Enter your password"
+                />
+                <p>Radio</p>
+                <input type="radio" name="platform" id="xbox" value="1" />
+                <span>Xbox</span>
+                <input
+                    type="radio"
+                    name="platform"
+                    id="playstation"
+                    value="2"
+                />
+                <span>PlayStation</span>
+                <p>Checkbox</p>
+                <input
+                    type="checkbox"
+                    name="subscribe"
+                    id="subscribe"
+                    value="1"
+                />
+                <span>Subscribe to newsletter</span>
+                <br />
+                <input class="button" type="submit" value="Submit" />
+            </form>
+        </main>
+    </body>
+</html>

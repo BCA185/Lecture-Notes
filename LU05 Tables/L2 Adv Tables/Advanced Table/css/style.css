@@ -1,0 +1,100 @@
+/* https://coolors.co/0b132b-1c2541-3a506b-5bc0be-6fffe9 */
+:root {
+    --color-dark: #0b132b;
+    --color-primary: #1c2541;
+    --color-secondary: #3a506b;
+    --color-text: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--color-dark);
+    /* Make the body take up the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-secondary);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    flex: 1;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.destination {
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    background-color: var(--color-secondary);
+    overflow: hidden;
+}
+
+.des-text {
+    /* Make the text area expand to fill the available space */
+    /* Pushing the footer to the bottom */
+    flex: 1;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: var(--color-text);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.destination img {
+    width: 90%;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+.image-grid {
+    display: grid;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Change the layout for smaller screens */
+@media (max-width: 768px) {
+    .image-grid {
+        flex-direction: column;
+    }
+}

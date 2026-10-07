@@ -10,3 +10,5 @@ Use the `.zip` file from Blackboard to get started.
 Finish the pages on the [`destinations.hml`](./Advnaced%20Table/html/destinations.html) page
 
 ![Finished Example Screenshot](finished-example.png)
+
+Make sure to talk about how making tables mobile friendly is difficult.

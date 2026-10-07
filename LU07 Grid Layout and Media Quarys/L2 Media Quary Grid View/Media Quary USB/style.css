@@ -1,0 +1,124 @@
+:root {
+    --background-color: #000;
+    --text-color: #00ff00;
+    --highlight-color: #ffcc00;
+    --border-color: #00ff00;
+    --shadow-color: #00ff00;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+.usb-logo img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.grid-item {
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 5px var(--shadow-color);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Media Query for Phones */
+/* We don't need this bc by default its not in grid view */
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #grid-container {
+        display: grid;
+        /* Two column layout for laptops and larger screens */
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .usb-logo {
+        display: none;
+    }
+}
+
+/* Media Query for Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #grid-container {
+        display: grid;
+        /* Two column layout for laptops and larger screens */
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+
+/* Media Query for Laptops and Larger Screens */
+@media screen and (min-width: 1025px) {
+    #grid-container {
+        display: grid;
+        /* Three columns layout for laptops and larger screens */
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+    }
+}

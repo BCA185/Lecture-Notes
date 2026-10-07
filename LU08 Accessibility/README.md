@@ -8,3 +8,6 @@ In this Learning Unit we will learn how to make our websites accessible to all u
 - [WebAIM: Web Accessibility in Mind](https://webaim.org/)
 - [W3C Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Introduction to Web Accessibility and W3C Standards Video](https://www.youtube.com/watch?v=20SHvU2PKsM)
+
+<!-- TODO focus on Lighthouse imporovemnts -->
+<!-- TODO inforce Mobile first design -->

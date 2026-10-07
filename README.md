@@ -63,3 +63,28 @@ Each day has all main topics covered in the lecture, links to reference material
 ## Contributing
 
 If you see a problem with a lecture or have suggestions for improvement, please feel free to open an issue or submit a pull request.
+
+## Convert Images
+
+Little script I use to convert images to webp format and move the original to trash.
+You need to have `cwebp` and `trash-put` installed for this to work.
+
+```bash
+#!/usr/bin/env bash
+
+find . -maxdepth 1 -type f \( \
+    -iname "*.jpg" -o \
+    -iname "*.jpeg" -o \
+    -iname "*.png" \
+\) -print0 |
+while IFS= read -r -d '' image; do
+    output="${image%.*}.webp"
+
+    if cwebp "$image" -o "$output"; then
+        trash-put "$image"
+        echo "Converted and moved to trash: $image"
+    else
+        echo "Conversion failed: $image"
+    fi
+done
+```

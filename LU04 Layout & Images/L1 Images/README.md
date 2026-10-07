@@ -1,8 +1,3 @@
-<!-- TODO Slow down only do the first three articales -->
-<!-- TODO don't do any flexbox this first day -->
-<!-- TODO Make images more responsive -->
-<!-- TODO show off placeholder images: https://placehold.co/ -->
-
 # LU04 Images
 
 Last unit we made our websites pretty with colors and fonts using CSS.

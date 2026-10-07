@@ -2,14 +2,15 @@
 
 For today's lecture we will be building a full website example with as much polish as we can
 
+<!-- TODO remove Images from example -->
+
 ## Build Web site content
 
 - Build Mock up of Gimp HomePage
     - [The Page we are trying to Build](https://www.gimp.org/)
 - Build the basic structure up to the fold
     - We won't get it perfect since we don't know ALL of CSS yet.
-- Right click the images to get a copy.
-    - Save Image As...
+- No Images
 
 ## Style the page
 
