@@ -20,7 +20,7 @@ header {
     align-items: center;
 }
 
-.logo {
+h1 {
     font-size: 2.2em;
     font-weight: bold;
     text-transform: uppercase;
@@ -55,13 +55,13 @@ main {
     box-shadow: 0 0 10px var(--shadow-color);
 }
 
-.grid-item {
+article {
     padding: 20px;
     border: 2px solid var(--border-color);
     box-shadow: 0 0 5px var(--shadow-color);
 }
 
-.grid-item img {
+article img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
@@ -78,6 +78,7 @@ footer {
 
 /* Media Query for Phones */
 /* We don't need this bc by default its not in grid view */
+/* Once this works, remove it and make the CSS mobile-first by default */
 @media screen and (max-width: 600px) {
     header {
         display: flex;
@@ -107,7 +108,6 @@ footer {
 
     #grid-container {
         display: grid;
-        /* Two column layout for laptops and larger screens */
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;
     }

@@ -1,7 +1,7 @@
 # Grid Layout
 
 Grid layout is another display property that allows you to create a grid of rows and columns.
-This is a **newer** layout method that doesn't replace flexbox, but can be used in conjunction with it.
+This is a **newer** layout method that doesn't replace Flexbox, but can be used in conjunction with it.
 
 - [MDN Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 - [W3Schools Grid Layout](https://www.w3schools.com/css/css_grid.asp)

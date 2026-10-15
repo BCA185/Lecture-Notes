@@ -1,9 +1,4 @@
-body,
-h1,
-h2,
-p,
-ul,
-li {
+body {
     margin: 0;
     padding: 0;
 }
@@ -59,8 +54,9 @@ img {
 
 footer {
     text-align: center;
-    background-color: #007bff;
-    /* Change color to increase contrast */
-    color: white;
+    /* TODO: Change background color to a darker shade of blue */
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
     padding: 10px;
 }

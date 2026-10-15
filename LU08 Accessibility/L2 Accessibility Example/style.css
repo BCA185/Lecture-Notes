@@ -1,29 +1,32 @@
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #ff6600;
+    --primary-color: #005a9c;
+    --secondary-color: #c14d04;
+    --text-color: #212121;
     --background-color: #f4f4f4;
-    --text-color: #000000;
 }
 
 body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
     background-color: var(--background-color);
+}
+
+main {
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
     background-color: var(--primary-color);
+    /* Padding will be the size of the texts */
     padding: 1rem;
-}
-
-h1 {
     color: white;
+    text-align: center;
 }
 
-nav{
+nav {
     background-color: var(--secondary-color);
 }
 
@@ -39,26 +42,31 @@ nav li {
 }
 
 nav a {
-    color: var(--text-color);
     text-decoration: none;
+    color: white;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-main {
-    margin-top: 30px;
+nav a:focus-visible,
+.button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px #212121;
 }
 
+/* Make each article look like a card */
 article {
     background-color: white;
     padding: 10px 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Make the link look like a button */
 .button {
     background-color: var(--primary-color);
     color: white;
@@ -73,7 +81,6 @@ article {
     background-color: var(--secondary-color);
 }
 
-
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -87,23 +94,11 @@ article {
     align-items: center;
 }
 
-.image-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
 .image-item figcaption {
     font-style: italic;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-    .image-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 img {
@@ -117,4 +112,18 @@ figcaption {
     color: var(--secondary-color);
     text-align: center;
     margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

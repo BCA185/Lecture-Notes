@@ -1,4 +1,4 @@
-# Unit 6 Web Accessibility
+# Into to Web Accessibility
 
 ## What is Web Accessibility
 
@@ -15,9 +15,18 @@
 ## How can we make sure our websites are Accessibility
 
 - [HTML Accessibility](https://www.w3schools.com/html/html_accessibility.asp)
+- [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+    - [Why you should start using ARIA Attributes in HTML](https://www.youtube.com/watch?v=JP2VkfYF5HU)
+- Show off Chrome and Firefox Accessibility tools
+    - For Chrome it's called Lighthouse
+
+## HTML Example Activity
+
 - Download Accessability Starter
-- Add `alt` text to image
-- Change tags to semantic tags
-- 
-- Fix text color contrast
-- Check accessibility with browser tool
+- Complete all the TODO in the `index.html` and `style.css` files.
+- Check the site with the Chrome Lighthouse tool and see if you can get a perfect score.
+
+![Accessibility Example](./AccessabilityExample.webp)
+
+![Lighthouse Score](./LighthouseScore.webp)
+
