@@ -4,7 +4,7 @@ This unit we we learn how to take the local files we have created (HTML, CSS, Ja
 
 ## Resources
 
-- []()
 - [Download Git](https://git-scm.com/downloads)
 - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-
+- [GitHub Pages](https://pages.github.com/)
+- [Git Clone Repo](https://github.com/sorrymint/BCA185IntroToGit)

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CSS and JavaScript Animation Demos</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Animation demos</h1>
+            <p>Examples of CSS and JavaScript animation.</p>
+        </header>
+
+        <main>
+            <section aria-labelledby="css-title">
+                <h2 id="css-title">CSS animations</h2>
+
+                <article aria-labelledby="transition-title">
+                    <h3 id="transition-title">Transition</h3>
+                    <p>
+                        Move over the button or focus it with the keyboard. A
+                        transition smooths a change between styles.
+                    </p>
+                    <button class="transition-demo" type="button">
+                        Hover or focus me
+                    </button>
+                </article>
+
+                <article aria-labelledby="keyframes-title">
+                    <h3 id="keyframes-title">Keyframes</h3>
+                    <p>
+                        This shape repeats a small up-and-down movement.
+                        Keyframes describe the animation’s steps.
+                    </p>
+                    <div
+                        class="float-demo"
+                        aria-label="A shape floating up and down"
+                    ></div>
+                </article>
+            </section>
+
+            <section aria-labelledby="javascript-title">
+                <h2 id="javascript-title">JavaScript animations</h2>
+
+                <article aria-labelledby="class-title">
+                    <h3 id="class-title">Change a CSS class</h3>
+                    <p>
+                        JavaScript decides when the state changes; CSS defines
+                        how it looks.
+                    </p>
+                    <button
+                        class="class-demo"
+                        type="button"
+                        aria-pressed="false"
+                    >
+                        Toggle glow
+                    </button>
+                </article>
+
+                <article aria-labelledby="api-title">
+                    <h3 id="api-title">Animate with JavaScript</h3>
+                    <p>
+                        Use the browser’s built-in <code>animate()</code> method
+                        to play an animation on click.
+                    </p>
+                    <div class="bounce-demo">
+                        <span class="ball" aria-hidden="true"></span>
+                        <button class="bounce-button" type="button">
+                            Bounce
+                        </button>
+                    </div>
+                </article>
+
+                <article aria-labelledby="pointer-title">
+                    <h3 id="pointer-title">Follow the pointer</h3>
+                    <p>
+                        Move the mouse or a finger inside the box. The logo
+                        follows the pointer within this stage.
+                    </p>
+                    <div
+                        class="pointer-stage"
+                        aria-label="Move the pointer inside this box to move the logo"
+                    >
+                        <span class="pointer-logo" aria-hidden="true"
+                            >◆Following you</span
+                        >
+                    </div>
+                </article>
+            </section>
+
+            <section aria-labelledby="summary-title">
+                <h2 id="summary-title">Which tool should I use?</h2>
+                <ul>
+                    <li>
+                        <strong>CSS transition:</strong> move between two
+                        states, such as hover or focus.
+                    </li>
+                    <li>
+                        <strong>CSS keyframes:</strong> describe repeating or
+                        multi-step motion.
+                    </li>
+                    <li>
+                        <strong>JavaScript:</strong> start an effect after an
+                        event or control a changing value.
+                    </li>
+                </ul>
+                <p>
+                    CSS motion here respects
+                    <code>prefers-reduced-motion</code> to trigger reduced
+                    motion. For JavaScript motion, Check
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion#User_Preferences"
+                        >the documentation</a
+                    >
+                    for how to turn on reduced motion. <code>animate()</code>.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

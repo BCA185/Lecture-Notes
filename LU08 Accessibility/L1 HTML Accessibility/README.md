@@ -1,4 +1,4 @@
-# Into to Web Accessibility
+# Introduction to Web Accessibility
 
 ## What is Web Accessibility
 
@@ -29,4 +29,3 @@
 ![Accessibility Example](./AccessabilityExample.webp)
 
 ![Lighthouse Score](./LighthouseScore.webp)
-
