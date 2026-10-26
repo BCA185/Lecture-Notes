@@ -2,7 +2,8 @@
 
 ## What is Web Accessibility
 
-- [Video](https://www.youtube.com/watch?v=3f31oufqFSM)
+<!-- - TODO find different more intro video: [Video](https://www.youtube.com/watch?v=3f31oufqFSM) -->
+
 - [Intro to Web Accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/#context)
     - https://www.w3.org/WAI/tips/designing/
 
@@ -19,6 +20,10 @@
     - [Why you should start using ARIA Attributes in HTML](https://www.youtube.com/watch?v=JP2VkfYF5HU)
 - Show off Chrome and Firefox Accessibility tools
     - For Chrome it's called Lighthouse
+
+## Color Contrast
+
+https://coolors.co
 
 ## HTML Example Activity
 

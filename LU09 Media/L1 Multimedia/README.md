@@ -1,19 +1,18 @@
-# Unit 9 Multimedia
+# LU09 Multimedia
 
 This example shows off `<iframe>`s and embedded media like video and audio.
 
-## Getting Started
 
-### Get Starter Code
+## Get Starter Code
 
 Download the Starter code this should include a `.pdf`, `.mp3.` and a `.mp4`
 
-### Build the Project
+## Build the Project
 
 Follow the file structure below using this that you just downloaded.
 
 ```
-├── Zoo Starter
+├── multimedia-embeds
 │   ├── assets
 │   │   ├── Apply Now.mp4
 |   |   ├── coloring.pdf
